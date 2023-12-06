@@ -58,7 +58,6 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
                             .header("loggedInUser" , jwtUtil.extractUsername(authHeader))
 
                             .build();
-
                 }catch (Exception ex){
                     System.out.println("invalid token ...");
                     throw new InvalidTokenException(ex.getMessage());
