@@ -14,7 +14,7 @@ import java.util.function.Function;
 public class JwtUtil {
 
     // https://generate-random.org/
-    private static final String SECRET_KEY = "c86a9b36a699c676f2bae926577051eee48ed4bae5f92c18c1e91e322312c8e6";
+    private static final String SECRET_KEY = "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970";
     // step 4
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
